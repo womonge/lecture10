@@ -5,11 +5,15 @@ def main():
 
     for x in range(1,101):
 
-        print(x,x**2,x**0.5,outfile)
+        #<index>:<format-specifier>
+        #<index>:<width>.<precision><type>
 
-      
 
-main()
+
+
+        print("{0}{1:5}{2:10.3f}".format(x,x**2,x**0.5),file=outfile)
 
         
+main()
+       
     
